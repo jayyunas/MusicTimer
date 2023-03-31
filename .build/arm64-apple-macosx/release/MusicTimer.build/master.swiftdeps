@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "e0d1494e26b4e6d0e0f6145cc62e9e07afa7f6fd032c14258112fc390eff1c76"
+build_start_time: [1680245859, 142250061]
+build_end_time: [1680245862, 251597881]
+inputs:
+  "/Users/jayyunas/Desktop/MusicTimer/MusicTimer.swift": [1680245078, 119063377]

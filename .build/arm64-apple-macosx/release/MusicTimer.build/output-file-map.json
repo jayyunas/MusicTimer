@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.d",
+    "object": "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.o",
+    "swift-dependencies": "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/master.swiftdeps"
+  },
+  "/Users/jayyunas/Desktop/MusicTimer/MusicTimer.swift": {
+    "object": "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swift.o",
+    "swiftmodule": "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer~partial.swiftmodule",
+    "swift-dependencies": "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swiftdeps"
+  }
+}

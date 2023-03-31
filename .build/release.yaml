@@ -1,0 +1,42 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "MusicTimer-release.module": ["<MusicTimer-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MusicTimer-release.module>"]
+  "test": ["<MusicTimer-release.module>"]
+default: "main"
+nodes:
+  "/Users/jayyunas/Desktop/MusicTimer/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "<MusicTimer-release.module>":
+    tool: phony
+    inputs: ["/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swift.o","/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.swiftmodule"]
+    outputs: ["<MusicTimer-release.module>"]
+
+  "C.MusicTimer-release.module":
+    tool: swift-compiler
+    inputs: ["/Users/jayyunas/Desktop/MusicTimer/MusicTimer.swift"]
+    outputs: ["/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swift.o","/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "MusicTimer"
+    module-output-path: "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.swiftmodule"
+    import-paths: ["/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release"]
+    temps-path: "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build"
+    objects: ["/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swift.o"]
+    other-args: ["-target","arm64-apple-macosx10.15","-swift-version","5","-O","-g","-j10","-DSWIFT_PACKAGE","-module-cache-path","/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/jayyunas/Desktop/MusicTimer/MusicTimer.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: 10
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/jayyunas/Desktop/MusicTimer/","/Users/jayyunas/Desktop/MusicTimer/Package.swift","/Users/jayyunas/Desktop/MusicTimer/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,4 @@
+module MusicTimer {
+    header "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer-Swift.h"
+    requires objc
+}

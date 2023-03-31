@@ -1,0 +1,76 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MusicTimer-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jayyunas/Desktop/MusicTimer/MusicTimer.swift"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MusicTimer",
+      "moduleOutputPath" : "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.swiftmodule",
+      "objects" : [
+        "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-swift-version",
+        "5",
+        "-O",
+        "-g",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-module-cache-path",
+        "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build/MusicTimer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/jayyunas/Desktop/MusicTimer/MusicTimer.swift"
+      ],
+      "tempsPath" : "/Users/jayyunas/Desktop/MusicTimer/.build/arm64-apple-macosx/release/MusicTimer.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}
